@@ -91,3 +91,11 @@ Loose coupling in this project:
 - implementations can be swapped without changing `UserManager`
 
 In short, loose coupling here is achieved by using an interface plus constructor injection.
+
+## Related Notes
+
+For the Spring IoC version of this same idea, see:
+
+```text
+notes/ioc-coupling-architecture-notes.md
+```
