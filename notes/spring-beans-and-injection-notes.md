@@ -595,3 +595,11 @@ In this project:
 The main thing we are trying to achieve:
 
 Instead of manually creating and connecting objects everywhere, we define them in Spring configuration and let Spring create, configure, and connect them for us.
+
+## Related Notes
+
+For XML autowiring examples using `byName`, `byType`, and `constructor`, see:
+
+```text
+notes/spring-autowiring-notes.md
+```
