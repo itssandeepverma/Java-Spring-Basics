@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- For autowire="constructor", Spring searches for a bean matching the constructor parameter type. -->
+    <bean id="specification" class="com.example.autowire.constructor.Specification">
+        <property name="make" value="Toyota"/>
+        <property name="model" value = "Corolla"/>
+    </bean>
+
+    <bean id = "MyCar" class="com.example.autowire.constructor.Car" autowire="constructor">
+    </bean>
+
+    <!-- For constructor autowiring, the constructor parameter type must match a bean type. -->
+
+</beans>

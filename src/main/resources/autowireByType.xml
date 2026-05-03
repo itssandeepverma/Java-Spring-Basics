@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- For autowire="byType", Spring searches for one bean of type Specification. -->
+    <bean id="specification" class="com.example.autowire.type.Specification">
+        <property name="make" value="Toyota"/>
+        <property name="model" value = "Corolla"/>
+    </bean>
+
+    <bean id = "MyCar" class="com.example.autowire.type.Car" autowire="byType">
+    </bean>
+
+    
+<!--    For byType, the bean id does not need to match the property name. The type must match. -->
+
+</beans>
