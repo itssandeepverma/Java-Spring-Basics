@@ -603,3 +603,9 @@ For XML autowiring examples using `byName`, `byType`, and `constructor`, see:
 ```text
 notes/spring-autowiring-notes.md
 ```
+
+For annotation-based bean creation, component scanning, values, and autowiring, see:
+
+```text
+notes/spring-annotations-notes.md
+```
