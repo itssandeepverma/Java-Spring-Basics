@@ -16,8 +16,8 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-    <!-- Use modern Java -->
-    <maven.compiler.release>25</maven.compiler.release>
+    <!-- Spring 6.1.x can scan Java 21 class files reliably. Running on JDK 25 is fine. -->
+    <maven.compiler.release>21</maven.compiler.release>
   </properties>
 
   <dependencies>
@@ -42,12 +42,12 @@
   <build>
     <plugins>
 
-      <!-- Compiler plugin updated for modern Java -->
+      <!-- Compile to Java 21 bytecode so Spring's component scanner can read class files. -->
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.11.0</version>
         <configuration>
-          <release>25</release>
+          <release>21</release>
         </configuration>
       </plugin>
 
